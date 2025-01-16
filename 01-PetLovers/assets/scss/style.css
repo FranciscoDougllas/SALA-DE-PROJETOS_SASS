@@ -73,7 +73,8 @@ body {
 #contain-primary #content .header img {
   width: 100%;
   border-radius: 20px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 #contain-primary #content .header #navUcult {
   display: none;
@@ -128,106 +129,16 @@ body {
   background-color: #d9d8a0;
   box-shadow: 0 5px 5px #444;
 }
-#contain-primary #content .content table {
-  border-collapse: separate;
-  border-spacing: 30px;
+#contain-primary #content table thead, #contain-primary #content table tbody, #contain-primary #content table tfoot {
   width: 100%;
-  background-color: #ebd599;
-  flex-wrap: wrap;
+  max-width: 965px;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  text-align: center;
 }
-#contain-primary #content .content table thead {
+#contain-primary #content table thead {
   background-color: #636429;
   color: #fff;
-}
-#contain-primary #content .content table thead tr, #contain-primary #content .content table thead th {
-  padding: 10px;
-}
-#contain-primary #content .content td {
-  padding: 10px;
-  background-color: #ccc;
-}
-#contain-primary #content form {
-  display: flex;
-  gap: 20px;
-  height: 400px;
-  padding: 30px;
-  background-color: #d9d9d9;
-  box-shadow: 0 5px 5px #444;
-}
-#contain-primary #content form .form-contain {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  flex: 1;
-  flex-wrap: wrap;
-}
-#contain-primary #content form .form-contain input {
-  padding: 10px;
-  border-radius: 10px;
-  border: none;
-  margin-bottom: 20px;
-}
-#contain-primary #content form .form-contain select {
-  padding: 10px;
-  border-radius: 10px;
-  border: none;
-}
-#contain-primary #content form .form-contain textarea {
-  height: 220px;
-  border: none;
-  border-radius: 10px;
-}
-#contain-primary #content form .form-contain .botoes {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-}
-#contain-primary #content form .form-contain .botoes button {
-  width: 150px;
-  height: 65px;
-  border-radius: 20px;
-  color: #fff;
-  font-size: 1.2rem;
-  border: none;
-}
-#contain-primary #content form .form-contain .botoes button:nth-child(1) {
-  background: linear-gradient(#565656, #333);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) inset, 0 0 10px rgba(0, 0, 0, 0.1);
-}
-#contain-primary #content form .form-contain .botoes button:nth-child(2) {
-  background: linear-gradient(#91A7BC, #333);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) inset, 0 0 10px rgba(0, 0, 0, 0.1);
-}
-#contain-primary #content form .form-contain .botoes button:hover {
-  background: #ccc;
-  border: 1px solid #fff;
-  color: #fff;
-}
-#contain-primary #content .OBS {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-}
-#contain-primary #content .OBS img {
-  flex: 2;
-  width: 250px;
-}
-#contain-primary #content .OBS ul {
-  flex: 3;
-  min-width: 300px;
-}
-#contain-primary #content iframe {
-  width: 100%;
-}
-#contain-primary #content .address {
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-}
-#contain-primary #content .address span {
-  font-size: 5rem;
-  font-family: "Itim", sans-serif;
 }
 #contain-primary #content .content.services {
   display: flex;
@@ -370,24 +281,6 @@ body {
     justify-content: center;
     gap: 10px;
   }
-  body #contain-primary #content .content table {
-    border-collapse: separate;
-    border-spacing: 10px;
-  }
-  body #contain-primary #content .content table td:nth-child(1),
-body #contain-primary #content .content table th:nth-child(1) {
-    display: none;
-  }
-  body #contain-primary #content .content table td, body #contain-primary #content .content table tr, body #contain-primary #content .content table th {
-    font-size: 0.7rem;
-  }
-  body #contain-primary #content .content form {
-    flex-direction: column;
-    height: auto;
-  }
-  body #contain-primary #content .content form textarea {
-    width: 100%;
-  }
 }
 @media screen and (max-width: 600px) {
   body #contain-primary #content .footer {
@@ -402,4 +295,4 @@ body #contain-primary #content .content table th:nth-child(1) {
     align-items: center;
     gap: 30px;
   }
-}
+}/*# sourceMappingURL=style.css.map */
