@@ -402,4 +402,9 @@ body #contain-primary #content .content table th:nth-child(1) {
     align-items: center;
     gap: 30px;
   }
+  body #contain-primary #content .address {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }

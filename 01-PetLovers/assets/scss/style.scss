@@ -475,7 +475,14 @@ body{
                         align-items: center;
                         gap: 30px;
                     }
+
                 }
+                .address{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                
+            }
             }
         }
     }
